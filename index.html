@@ -14,7 +14,7 @@
         }
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f8f8f8;
             color: #333;
             line-height: 1.6;
             margin: 0;
@@ -22,7 +22,7 @@
         }
         /* Header */
         header {
-            background-color: #007bff;
+            background-color: #222;
             color: #fff;
             text-align: center;
             padding: 20px 0;
@@ -36,38 +36,48 @@
             margin-bottom: 0;
         }
         /* Main Content */
-        .container {
+        .main-profile {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .profile-img {
+        .main-profile img {
             border-radius: 50%;
             max-width: 200px;
-            margin: 20px auto;
             display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
         }
-        .bio, .skills, .experience, .learning, .projects, .social-handles {
-            margin-bottom: 30px;
+        .main-profile p {
+            margin-bottom: 15px;
         }
-        .section-title {
-            font-size: 24px;
+        .main-profile h4 {
             margin-bottom: 10px;
+            color: #222;
+        }
+        .main-profile ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        .main-profile li {
+            margin-bottom: 5px;
+        }
+        .social-handle-component {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .social-handle-component a {
+            margin-right: 10px;
+            color: #222;
+            transition: color 0.3s ease;
+        }
+        .social-handle-component a:hover {
             color: #007bff;
-        }
-        .project-list {
-            list-style: none;
-            padding: 0;
-        }
-        .project-list li {
-            margin-bottom: 10px;
-        }
-        .project-list li a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .project-list li a:hover {
-            text-decoration: underline;
         }
         /* Footer */
         footer {
@@ -75,9 +85,6 @@
             margin-top: 30px;
             padding-top: 20px;
             border-top: 1px solid #ddd;
-        }
-        footer p {
-            font-size: 14px;
             color: #555;
         }
     </style>
@@ -85,66 +92,61 @@
 <body>
     <header>
         <h1>Himmat Rai</h1>
-        <p>1st year Computer Science BSc (Hons) undergraduate</p>
     </header>
-    <div class="container">
-        <img class="profile-img" src="images/new-pp.jpg" alt="Mirror selfie in restroom.">
-        <div class="bio">
-            <h2 class="section-title">Bio:</h2>
-            <p>Greetings! I am Himmat Rai, a passionate Computer Science student aiming to become a proficient software engineer with expertise in ML, Blockchain, and web technologies.</p>
-        </div>
-        <div class="skills">
-            <h2 class="section-title">Skills:</h2>
-            <ul>
-                <li>Flutter</li>
-                <li>Dart</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Rest API</li>
-                <li>MySQL</li>
-                <li>Oracle SQL</li>
-                <li>Scala</li>
-                <li>HTML/CSS</li>
-                <li>Git</li>
-                <li>GitHub</li>
-            </ul>
-        </div>
-        <div class="experience">
-            <h2 class="section-title">Experience:</h2>
-            <ul>
-                <li>Mobile Application Development (Flutter)</li>
-                <li>Object-Oriented Programming in Dart</li>
-                <li>Rest API integration</li>
-                <li>Frontend development in Flutter</li>
-            </ul>
-        </div>
-        <div class="learning">
-            <h2 class="section-title">Learning:</h2>
-            <ul>
-                <li>Full-stack web development</li>
-                <li>Scala Programming (working on CLI Chess Engine project)</li>
-            </ul>
-        </div>
-        <div class="projects">
-            <h2 class="section-title">Projects:</h2>
-            <ul class="project-list">
-                <li><a href="https://play.google.com/store/apps/details?id=com.thegrodeli.grodeli_app&pcampaignid=web_share" target="_blank">Grodeli</a> (Single vendor eCommerce app developed in Flutter.)</li>
-                <li><a href="https://play.google.com/store/apps/details?id=com.impression.impression_app&pcampaignid=web_share" target="_blank">Impression</a> (Nepalese local Dating App.)</li>
-                <li><a href="https://play.google.com/store/apps/details?id=com.upliftsolutions.postaam&pcampaignid=web_share" target="_blank">Postaam</a> (Social commerce app having TikTok, Instagram features like short reels and marketplace.)</li>
-            </ul>
-        </div>
-        <div class="social-handles">
-            <h2 class="section-title">Social handles:</h2>
-            <ul>
-                <li><a href="https://github.com/himmat12" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/himmat1241/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://twitter.com/himmat_1241" target="_blank">Twitter</a></li>
-                <li><a href="https://www.instagram.com/90df47her/" target="_blank">Instagram</a></li>
-            </ul>
+    <div class="main-profile">
+        <img src="images/new-pp.jpg" alt="Mirror selfie in restroom.">
+        <p>
+            <strong>Himmat Rai</strong><br>
+            LE2 7EQ, Leicetser, United Kingdom<br>
+            himmatrai20@gmail.com<br>
+            +44 7456317161<br>
+            <a href="https://github.com/himmat12" target="_blank">GitHub</a><br>
+            <a href="https://www.linkedin.com/in/himmat1241/" target="_blank">LinkedIn</a>
+        </p>
+        <h4>Bio:</h4>
+        <p>Greetings! I am Himmat Rai, a 1st-year Computer Science BSc (Hons) undergraduate student living my dream and aspiring to be a full-fledged software engineer with expertise in ML, Blockchain, and web technologies.</p>
+        <h4>Skills:</h4>
+        <ul>
+            <li>Flutter</li>
+            <li>Dart</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Rest API</li>
+            <li>MySQL</li>
+            <li>Oracle SQL</li>
+            <li>Scala</li>
+            <li>HTML/CSS</li>
+            <li>Git</li>
+            <li>GitHub</li>
+        </ul>
+        <h4>Experience:</h4>
+        <ul>
+            <li>Mobile Application Development (Flutter)</li>
+            <li>Object-Oriented Programming in Dart</li>
+            <li>Rest API integration</li>
+            <li>Frontend development in Flutter</li>
+        </ul>
+        <h4>Learning:</h4>
+        <ul>
+            <li>Full-stack web development</li>
+            <li>Scala Programming (working on CLI Chess Engine project)</li>
+        </ul>
+        <h4>Projects:</h4>
+        <ul>
+            <li><a href="https://play.google.com/store/apps/details?id=com.thegrodeli.grodeli_app&pcampaignid=web_share" target="_blank">Grodeli</a> (Single vendor eCommerce app developed in Flutter.)</li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.impression.impression_app&pcampaignid=web_share" target="_blank">Impression</a> (Nepalese local Dating App.)</li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.upliftsolutions.postaam&pcampaignid=web_share" target="_blank">Postaam</a> (Social commerce app having TikTok, Instagram features like short reels and marketplace.)</li>
+        </ul>
+        <h4>Social handles:</h4>
+        <div class="social-handle-component">
+            <a href="https://github.com/himmat12" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/himmat1241/" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/himmat_1241" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/90df47her/" target="_blank">Instagram</a>
         </div>
     </div>
     <footer>
-        <p>&copy;2024 Himmat Rai all rights reserved. | Portfolio website</p>
+        <p>&copy; 2024 Himmat Rai | Portfolio website</p>
     </footer>
 </body>
 </html>
